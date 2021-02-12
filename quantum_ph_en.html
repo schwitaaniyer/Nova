@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photon Energy Calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      height: 100%;
+      }
+      body, input, select { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #eee;
+      }
+      h1, h3 {
+      font-weight: 400;
+      }
+      h1 {
+      font-size: 32px;
+      }
+      h3 {
+      color: #1c87c9;
+      }
+      .main-block, .info {
+      display: flex;
+      flex-direction: column;
+      }
+      .main-block {
+      justify-content: center;
+      align-items: center;
+      width: 100%; 
+      min-height: 100%;
+      background: url("https://static.kent.ac.uk/nexus/ems/514.jpg") no-repeat center;
+      background-size: cover;
+      }
+      form {
+      width: 80%; 
+      padding: 25px;
+      margin-bottom: 40px;
+      background: rgba(0, 0, 0, 0.9);
+      }
+      input, select {
+      padding: 5px;
+      margin-bottom: 40px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+      color: #eee;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+      .metod {
+      display: flex; 
+      }
+    
+      @media (min-width: 568px) {
+      .info {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      }
+      input {
+      width: 46%;
+  }
+     
+      select {
+      width: 48%;
+      }
+      }
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #df2020;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+      <h1 style="color:black; background-color: #ccccff ;"><b>&nbspPhoton Energy Calculator&nbsp</b></h1>
+      <form method="POST">
+        <div class="info">
+          <input type="text" name="one" placeholder="Wavelength"><br>
+        </div>
+        <center><input type = "submit" value = "Submit"></center>
+      </form>
+    </div>
+  </body>
+</html>
